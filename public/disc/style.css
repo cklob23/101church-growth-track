@@ -25,24 +25,24 @@
     padding:20px;
 }
 span[data-answer='1'], span[data-answer='1']:hover {
-    background:#3333cc;
-    border-color:#3333cc;
+    background:#1027E8;
+    border-color:#1027E8;
 }
 span[data-answer='2'], span[data-answer='2']:hover {
-    background:#6633cc;
-    border-color:#6633cc;
+    background:#85BD3A;
+    border-color:#85BD3A;
 }
 span[data-answer='3'], span[data-answer='3']:hover {
-    background:#996699;
-    border-color:#996699;
+    background:#E9B940;
+    border-color:#E9B940;
 }
 span[data-answer='4'], span[data-answer='4']:hover {
-    background:#d9864f;
-    border-color:#d9864f;
+    background:#E48C34;
+    border-color:#E48C34;
 }
 span[data-answer='5'], span[data-answer='5']:hover {
-    background:#ff9933;
-    border-color:#ff9933;
+    background:#AF251A;
+    border-color:#AF251A;
 }
 
 #question .btn {
