@@ -24,6 +24,32 @@
 #disc-intro, #question, #results {
     padding:20px;
 }
+
+/*
+PREVIOUSLY:
+
+span[data-answer='1'], span[data-answer='1']:hover {
+    background:#3333cc;
+    border-color:#3333cc;
+}
+span[data-answer='2'], span[data-answer='2']:hover {
+    background:#6633cc;
+    border-color:#6633cc;
+}
+span[data-answer='3'], span[data-answer='3']:hover {
+    background:#996699;
+    border-color:#996699;
+}
+span[data-answer='4'], span[data-answer='4']:hover {
+    background:#d9864f;
+    border-color:#d9864f;
+}
+span[data-answer='5'], span[data-answer='5']:hover {
+    background:#ff9933;
+    border-color:#ff9933;
+}
+
+*/
 span[data-answer='1'], span[data-answer='1']:hover {
     background:#1027E8;
     border-color:#1027E8;
