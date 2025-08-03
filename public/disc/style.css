@@ -60,17 +60,17 @@ span[data-answer="1"]:hover {
   background-position: center;
   border-color: none;
   border-radius: 30;
-  font-weight: 600;
+  font-weight: 700;
 }
 span[data-answer="2"],
 span[data-answer="2"]:hover {
-  background-image: url("../assets/greenStain.png");
+  background-image: url("../assets/darkGreenStain.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
   border-radius: 30;
-  font-weight: 600;
+  font-weight: 700;
 }
 span[data-answer="3"],
 span[data-answer="3"]:hover {
@@ -80,7 +80,7 @@ span[data-answer="3"]:hover {
   background-position: center;
   border-color: none;
   border-radius: 30;
-  font-weight: 600;
+  font-weight: 700;
 }
 span[data-answer="4"],
 span[data-answer="4"]:hover {
@@ -90,7 +90,7 @@ span[data-answer="4"]:hover {
   background-position: center;
   border-color: none;
   border-radius: 30;
-  font-weight: 600;
+  font-weight: 700;
 }
 span[data-answer="5"],
 span[data-answer="5"]:hover {
@@ -100,7 +100,7 @@ span[data-answer="5"]:hover {
   background-position: center;
   border-color: none;
   border-radius: 30;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #question .btn {
