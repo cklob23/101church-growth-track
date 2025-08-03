@@ -59,6 +59,8 @@ span[data-answer="1"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
+  border-radius: 30;
+  font-weight: 600;
 }
 span[data-answer="2"],
 span[data-answer="2"]:hover {
@@ -67,6 +69,8 @@ span[data-answer="2"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
+  border-radius: 30;
+  font-weight: 600;
 }
 span[data-answer="3"],
 span[data-answer="3"]:hover {
@@ -75,6 +79,8 @@ span[data-answer="3"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
+  border-radius: 30;
+  font-weight: 600;
 }
 span[data-answer="4"],
 span[data-answer="4"]:hover {
@@ -83,6 +89,8 @@ span[data-answer="4"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
+  border-radius: 30;
+  font-weight: 600;
 }
 span[data-answer="5"],
 span[data-answer="5"]:hover {
@@ -91,6 +99,8 @@ span[data-answer="5"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
+  border-radius: 30;
+  font-weight: 600;
 }
 
 #question .btn {
