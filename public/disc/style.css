@@ -59,7 +59,7 @@ span[data-answer="1"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 25;
+  border-radius: 20;
   font-weight: 700;
 }
 span[data-answer="2"],
@@ -69,7 +69,7 @@ span[data-answer="2"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 25;
+  border-radius: 20;
   font-weight: 700;
 }
 span[data-answer="3"],
@@ -79,7 +79,7 @@ span[data-answer="3"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 25;
+  border-radius: 20;
   font-weight: 700;
 }
 span[data-answer="4"],
@@ -89,7 +89,7 @@ span[data-answer="4"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 25;
+  border-radius: 20;
   font-weight: 700;
 }
 span[data-answer="5"],
@@ -99,7 +99,7 @@ span[data-answer="5"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 25;
+  border-radius: 20;
   font-weight: 700;
 }
 
