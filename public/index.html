@@ -246,14 +246,7 @@
               });
               var ah = "<html><h1>Your Simple DISCovery results</h1>";
               $("#results").html(ah);
-              var fullHtml = $("#results").html();
-              var start = fullHtml.indexOf("Your personality type is");
-              if (start !== -1) {
-                var personalityHtml = fullHtml.substring(start);
-                var modifiedHtml = personalityHtml.replace("Your", "My");
-                console.log(modifiedHtml);
-              }
-              console.log(modifiedHtml);
+              console.log($("#results").html());
               $("#results").slideDown();
             });
             console.log(window.answers.length);
