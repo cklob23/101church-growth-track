@@ -246,7 +246,13 @@
               });
               var ah = "<html><h1>Your Simple DISCovery results</h1>";
               $("#results").html(ah);
-             console.log(String($("#results").html()).substring("<h2>").replace("Your", "My"));
+              var fullHtml = $("#results").html();
+              var start = fullHtml.indexOf("Your personality type is");
+              if (start !== -1) {
+                var personalityHtml = fullHtml.substring(start);
+                var modifiedHtml = personalityHtml.replace("Your", "My");
+                console.log(modifiedHtml);
+              }
               $("#results").slideDown();
             });
             console.log(window.answers.length);
