@@ -69,7 +69,7 @@ span[data-answer="1"]:hover {
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
-  filter: brightness(1.2);
+  /*filter: brightness(1.2);*/
 }
 
 span[data-answer="2"],
@@ -83,7 +83,7 @@ span[data-answer="2"]:hover {
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
-  filter: brightness(1.2);
+  /*filter: brightness(1.2);*/
 }
 
 span[data-answer="3"],
@@ -97,7 +97,7 @@ span[data-answer="3"]:hover {
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
-  filter: brightness(1.2);
+ /*filter: brightness(1.2);*/
 }
 
 span[data-answer="4"],
@@ -111,7 +111,7 @@ span[data-answer="4"]:hover {
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
-  filter: brightness(1.2);
+  /*filter: brightness(1.2);*/
 }
 
 span[data-answer="5"],
@@ -125,7 +125,7 @@ span[data-answer="5"]:hover {
   font-weight: 600;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
-  filter: brightness(1.2);
+  /*filter: brightness(1.2);*/
 }
 
 #question .btn {
