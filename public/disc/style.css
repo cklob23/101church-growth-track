@@ -55,8 +55,8 @@ span[data-answer='5'], span[data-answer='5']:hover {
 span[data-answer="1"],
 span[data-answer="1"]:hover {
   background-image: url("../assets/blueStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   border-color: none;
   border-radius: 20;
@@ -64,9 +64,9 @@ span[data-answer="1"]:hover {
 }
 span[data-answer="2"],
 span[data-answer="2"]:hover {
-  background-image: url("../assets/darkGreenStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../assets/greenStain.png");
+ background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   border-color: none;
   border-radius: 20;
@@ -75,8 +75,8 @@ span[data-answer="2"]:hover {
 span[data-answer="3"],
 span[data-answer="3"]:hover {
   background-image: url("../assets/yellowStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   border-color: none;
   border-radius: 20;
@@ -85,8 +85,8 @@ span[data-answer="3"]:hover {
 span[data-answer="4"],
 span[data-answer="4"]:hover {
   background-image: url("../assets/orangeStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   border-color: none;
   border-radius: 20;
@@ -95,8 +95,8 @@ span[data-answer="4"]:hover {
 span[data-answer="5"],
 span[data-answer="5"]:hover {
   background-image: url("../assets/redStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   border-color: none;
   border-radius: 20;
