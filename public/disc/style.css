@@ -65,11 +65,11 @@ span[data-answer="1"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 15;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: 700;
   color: #fff;
   text-shadow: #000;
-  filter: brightness(1.2);
+  filter: brightness(1.7);
 }
 
 span[data-answer="2"],
@@ -79,11 +79,11 @@ span[data-answer="2"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 15;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: 700;
   color: #fff;
   text-shadow: #000;
-  filter: brightness(1.2);
+  filter: brightness(1.7);
 }
 
 span[data-answer="3"],
@@ -93,11 +93,11 @@ span[data-answer="3"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 15;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: 700;
   color: #fff;
   text-shadow: #000;
-  filter: brightness(1.2);
+  filter: brightness(1.7);
 }
 
 span[data-answer="4"],
@@ -107,11 +107,11 @@ span[data-answer="4"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 15;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: 700;
   color: #fff;
   text-shadow: #000;
-  filter: brightness(1.2);
+  filter: brightness(1.7);
 }
 
 span[data-answer="5"],
@@ -121,11 +121,11 @@ span[data-answer="5"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 15;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: 700;
   color: #fff;
   text-shadow: #000;
-  filter: brightness(1.2);
+  filter: brightness(1.7);
 }
 
 #question .btn {
