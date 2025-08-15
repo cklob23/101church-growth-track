@@ -5,22 +5,28 @@
 #disc-table {
   width: 100%;
 }
+
 .center {
   text-align: center;
 }
+
 .answer {
   margin: 0px 10px;
 }
+
 .answer.btn {
   display: block;
   margin-bottom: 1rem;
 }
+
 #question h3 {
   min-height: 100px;
 }
+
 #question {
   text-align: center;
 }
+
 #disc-intro,
 #question,
 #results {
@@ -55,23 +61,31 @@ span[data-answer='5'], span[data-answer='5']:hover {
 span[data-answer="1"],
 span[data-answer="1"]:hover {
   background-image: url("../assets/blueStain.png");
- background-size: auto;
+  background-size: auto;
   background-repeat: repeat;
   background-position: center;
   border-color: none;
-  border-radius: 20;
-  font-weight: 700;
+  border-radius: 15;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #000;
+  filter: brightness(1.2);
 }
+
 span[data-answer="2"],
 span[data-answer="2"]:hover {
   background-image: url("../assets/greenStain.png");
- background-size: auto;
+  background-size: auto;
   background-repeat: repeat;
   background-position: center;
   border-color: none;
-  border-radius: 20;
-  font-weight: 700;
+  border-radius: 15;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #000;
+  filter: brightness(1.2);
 }
+
 span[data-answer="3"],
 span[data-answer="3"]:hover {
   background-image: url("../assets/yellowStain.png");
@@ -79,28 +93,39 @@ span[data-answer="3"]:hover {
   background-repeat: repeat;
   background-position: center;
   border-color: none;
-  border-radius: 20;
-  font-weight: 700;
+  border-radius: 15;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #000;
+  filter: brightness(1.2);
 }
+
 span[data-answer="4"],
 span[data-answer="4"]:hover {
   background-image: url("../assets/orangeStain.png");
- background-size: auto;
+  background-size: auto;
   background-repeat: repeat;
   background-position: center;
   border-color: none;
-  border-radius: 20;
-  font-weight: 700;
+  border-radius: 15;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #000;
+  filter: brightness(1.2);
 }
+
 span[data-answer="5"],
 span[data-answer="5"]:hover {
   background-image: url("../assets/redStain.png");
- background-size: auto;
+  background-size: auto;
   background-repeat: repeat;
   background-position: center;
   border-color: none;
-  border-radius: 20;
-  font-weight: 700;
+  border-radius: 15;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #000;
+  filter: brightness(1.2);
 }
 
 #question .btn {
