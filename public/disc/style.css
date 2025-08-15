@@ -68,7 +68,7 @@ span[data-answer="1"]:hover {
   border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 3px 0 10px;
+  text-shadow: 1px 1px 2px #000;
   filter: brightness(1.2);
 }
 
@@ -82,7 +82,7 @@ span[data-answer="2"]:hover {
   border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 3px 0 10px;
+  text-shadow: 1px 1px 2px #000;
   filter: brightness(1.2);
 }
 
@@ -96,7 +96,7 @@ span[data-answer="3"]:hover {
   border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 3px 0 10px;
+  text-shadow: 1px 1px 2px #000;
   filter: brightness(1.2);
 }
 
@@ -110,7 +110,7 @@ span[data-answer="4"]:hover {
   border-radius: 12px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 3px 0 10px;
+  text-shadow: 1px 1px 2px #000;
   filter: brightness(1.2);
 }
 
@@ -124,7 +124,7 @@ span[data-answer="5"]:hover {
   border-radius: 12px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 3px 0 10px;
+  text-shadow: 1px 1px 2px #000;
   filter: brightness(1.2);
 }
 
