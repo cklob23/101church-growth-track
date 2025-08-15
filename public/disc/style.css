@@ -65,11 +65,11 @@ span[data-answer="1"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 1px 0 10px;
-  filter: brightness(1.5);
+  text-shadow: #000 3px 0 10px;
+  filter: brightness(1.2);
 }
 
 span[data-answer="2"],
@@ -79,11 +79,11 @@ span[data-answer="2"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 1px 0 10px;
-  filter: brightness(1.5);
+  text-shadow: #000 3px 0 10px;
+  filter: brightness(1.2);
 }
 
 span[data-answer="3"],
@@ -93,11 +93,11 @@ span[data-answer="3"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 1px 0 10px;
-  filter: brightness(1.5);
+  text-shadow: #000 3px 0 10px;
+  filter: brightness(1.2);
 }
 
 span[data-answer="4"],
@@ -110,8 +110,8 @@ span[data-answer="4"]:hover {
   border-radius: 12px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 1px 0 10px;
-  filter: brightness(1.5);
+  text-shadow: #000 3px 0 10px;
+  filter: brightness(1.2);
 }
 
 span[data-answer="5"],
@@ -124,8 +124,8 @@ span[data-answer="5"]:hover {
   border-radius: 12px;
   font-weight: 600;
   color: #fff;
-  text-shadow: #000 1px 0 10px;
-  filter: brightness(1.5);
+  text-shadow: #000 3px 0 10px;
+  filter: brightness(1.2);
 }
 
 #question .btn {
