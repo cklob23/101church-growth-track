@@ -86,10 +86,10 @@ span[data-answer] {
 
 /* Color themes */
 span[data-answer='1'] { background-image: url('/assets/blueStain.png'); }
-span[data-answer='2'] { --rgb: 30, 150, 70; }   /* green */
-span[data-answer='3'] { --rgb: 230, 200, 50; }  /* yellow */
-span[data-answer='4'] { --rgb: 230, 110, 20; }  /* orange */
-span[data-answer='5'] { --rgb: 160, 30, 30; }   /* red */
+span[data-answer='2'] { background-image: url('/assets/greenStain.png'); }
+span[data-answer='3'] { background-image: url('/assets/yellowStain.png'); }
+span[data-answer='4'] { background-image: url('/assets/orangeStain.png'); }
+span[data-answer='5'] { background-image: url('/assets/redStain.png'); }
 
 /* Hover lighting */
 span[data-answer]:hover {
