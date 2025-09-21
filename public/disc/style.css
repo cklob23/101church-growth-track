@@ -57,79 +57,83 @@ span[data-answer='5'], span[data-answer='5']:hover {
     border-color:#ff9933;
 }
 
-/* Base stained glass panel */
-span[data-answer] {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  margin: 14px auto;
-  padding: 20px 24px;
+.never    { background-color: rgba(0, 0, 150, 0.6); }
+.rarely   { background-color: rgba(0, 150, 0, 0.6); }
+.sometimes{ background-color: rgba(200, 150, 0, 0.6); }
+.often    { background-color: rgba(200, 50, 0, 0.6); }
+.always   { background-color: rgba(150, 0, 0, 0.6); }
+
+
+*/
+span[data-answer="1"],
+span[data-answer="1"]:hover {
+  background-image: url("../assets/blueStain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: none;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.4px;
   color: #fff;
-  position: relative;
-  overflow: hidden;
-  --rgb: 30,144,255;
-
-  /* Glassy background with depth */
-  background:
-    repeating-linear-gradient(
-      135deg,
-      rgba(255,255,255,0.06) 0 2px,
-      transparent 2px 6px
-    ),
-    linear-gradient(145deg,
-      rgba(var(--rgb),0.85),
-      rgba(var(--rgb),0.65)
-    );
-  background-blend-mode: overlay, normal;
-
-  /* Make it look inset into a dark lead frame */
-  border: 4px solid rgba(30,30,30,0.9);
-  box-shadow:
-    inset 0 1px 4px rgba(255,255,255,0.15),
-    inset 0 -2px 6px rgba(0,0,0,0.4),
-    0 6px 12px rgba(0,0,0,0.45);
-  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 2px #000;
+  filter: brightness(100%);
 }
 
-/* “Seam” overlay to mimic irregular lead lines */
-span[data-answer]::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background-image:
-    radial-gradient(circle at 20% 20%, rgba(0,0,0,0.6) 0 1px, transparent 2px),
-    radial-gradient(circle at 80% 35%, rgba(0,0,0,0.6) 0 1px, transparent 2px),
-    radial-gradient(circle at 40% 70%, rgba(0,0,0,0.6) 0 1px, transparent 2px),
-    linear-gradient(90deg, rgba(0,0,0,0.4) 1px, transparent 2px),
-    linear-gradient(0deg, rgba(0,0,0,0.4) 1px, transparent 2px);
-  mix-blend-mode: multiply;
-  opacity: 0.35;
+span[data-answer="2"],
+span[data-answer="2"]:hover {
+  background-image: url("../assets/greenStain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: none;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  filter: brightness(100%);
 }
 
-/* Hover/active for light refraction effect */
-span[data-answer]:hover {
-  filter: brightness(1.15) contrast(1.1);
-  transform: scale(1.02);
-}
-span[data-answer]:active {
-  filter: brightness(0.9);
-  transform: scale(0.98);
+span[data-answer="3"],
+span[data-answer="3"]:hover {
+  background-image: url("../assets/yellowStain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: none;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  filter: brightness(100%);
 }
 
-/* Color themes */
-span[data-answer='1'] { --rgb: 40, 90, 200; }   /* blue glass */
-span[data-answer='2'] { --rgb: 30, 150, 70; }   /* green glass */
-span[data-answer='3'] { --rgb: 230, 200, 50; }  /* yellow glass */
-span[data-answer='4'] { --rgb: 230, 110, 20; }  /* orange glass */
-span[data-answer='5'] { --rgb: 160, 30, 30; }   /* red glass */
+span[data-answer="4"],
+span[data-answer="4"]:hover {
+  background-image: url("../assets/orangeStain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: none;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  filter: brightness(100%);
+}
+
+span[data-answer="5"],
+span[data-answer="5"]:hover {
+  background-image: url("../assets/redStain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: none;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  filter: brightness(100%);
+}
 
 #question .btn {
   color: #fff !important;
