@@ -57,76 +57,80 @@ span[data-answer='5'], span[data-answer='5']:hover {
     border-color:#ff9933;
 }
 
-*/
-span[data-answer="1"],
-span[data-answer="1"]:hover {
-  background-image: url("../assets/blueStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: none;
-  border-radius: 8px;
+/* Shared stained-glass base */
+span[data-answer] {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 12px auto;
+  padding: 18px 22px;
+  border-radius: 12px;
+  cursor: pointer;
   font-weight: 700;
+  font-size: 20px;
   color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  filter: brightness(100%);
+  text-align: center;
+  letter-spacing: 0.4px;
+  transition: transform .14s ease, box-shadow .14s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* default base if no --rgb set */
+  --rgb: 30, 144, 255;
+
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.02)),
+    linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.14)),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06) 0 8%, transparent 18%),
+    radial-gradient(circle at 80% 40%, rgba(0,0,0,0.06) 0 12%, transparent 26%),
+    radial-gradient(circle at 40% 70%, rgba(255,255,255,0.05) 0 7%, transparent 18%),
+    linear-gradient(0deg, rgba(var(--rgb),0.82), rgba(var(--rgb),0.86));
+  background-blend-mode: overlay, multiply, overlay, overlay, overlay, normal;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.35),
+    inset 0 2px 10px rgba(255,255,255,0.06),
+    inset 0 -8px 18px rgba(0,0,0,0.18);
+  border: 2px solid rgba(0,0,0,0.45);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.65);
 }
 
-span[data-answer="2"],
-span[data-answer="2"]:hover {
-  background-image: url("../assets/greenStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: none;
-  border-radius: 8px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  filter: brightness(100%);
+/* Stained-glass “seam” texture */
+span[data-answer]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background-image:
+    radial-gradient(circle at 18% 14%, rgba(0,0,0,0.65) 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 24%, rgba(0,0,0,0.6) 0 1px, transparent 2px),
+    radial-gradient(circle at 35% 64%, rgba(0,0,0,0.6) 0 1px, transparent 2px);
+  mix-blend-mode: multiply;
+  opacity: 0.28;
+  filter: blur(0.4px);
 }
 
-span[data-answer="3"],
-span[data-answer="3"]:hover {
-  background-image: url("../assets/yellowStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: none;
-  border-radius: 8px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  filter: brightness(100%);
+/* Hover + active states */
+span[data-answer]:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45),
+    inset 0 2px 16px rgba(255,255,255,0.08),
+    inset 0 -10px 24px rgba(0,0,0,0.2);
+}
+span[data-answer]:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35),
+    inset 0 1px 8px rgba(255,255,255,0.04),
+    inset 0 -6px 12px rgba(0,0,0,0.18);
 }
 
-span[data-answer="4"],
-span[data-answer="4"]:hover {
-  background-image: url("../assets/orangeStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: none;
-  border-radius: 8px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  filter: brightness(100%);
-}
-
-span[data-answer="5"],
-span[data-answer="5"]:hover {
-  background-image: url("../assets/redStain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: none;
-  border-radius: 8px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  filter: brightness(100%);
-}
+/* Map each button’s color */
+span[data-answer='1'] { --rgb: 20, 40, 160; }   /* blue */
+span[data-answer='2'] { --rgb: 10, 130, 60; }   /* green */
+span[data-answer='3'] { --rgb: 220, 170, 30; }  /* yellow */
+span[data-answer='4'] { --rgb: 220, 80, 10; }   /* orange */
+span[data-answer='5'] { --rgb: 140, 10, 10; }   /* red */
 
 #question .btn {
   color: #fff !important;
