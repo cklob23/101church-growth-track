@@ -63,12 +63,12 @@ span[data-answer] {
   width: 100%;
   max-width: 900px;
   max-height: 40px;
-  margin: 14px auto;
-  padding: 20px 24px;
+  margin: 10px auto;
+  padding: 10px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 16px;
   text-align: center;
   letter-spacing: 0.4px;
   color: #fff;
