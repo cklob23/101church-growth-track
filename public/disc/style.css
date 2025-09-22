@@ -62,6 +62,7 @@ span[data-answer] {
   display: block;
   width: 100%;
   max-width: 900px;
+  max-height: 40px;
   margin: 14px auto;
   padding: 20px 24px;
   border-radius: 8px;
