@@ -198,15 +198,14 @@
               }),
               cache: false,
             }).done(function (response) {
-              // response = { html: "...", attachment: "base64string" }
-              $("#results").append(response.html);
-
               // Save for later "send" call
               window.resultHtml = response.html;
               window.resultAttachment = response.attachment;
 
-              var ah = "<html><h1>Your Simple DISCovery results</h1>";
-              $("#results").html(ah);
+              // Show the results on the page
+              $("#results").html(
+                "<h1>Your Simple DISCovery results</h1>" + response.html
+              );
               $("#results").slideDown();
 
               console.log("✅ Result HTML and attachment saved");
