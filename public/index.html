@@ -232,6 +232,14 @@
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
       ];
 
+      const skipAnswers2 = [
+        1, 4, 5, 4, 4, 3, 4, 4, 3, 5, 3, 3, 4, 3, 3, 4, 2, 5, 3, 4, 5,
+        4, 1, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 4, 2, 1, 4, 4, 4, 4, 4,
+        4, 4, 2, 4, 4, 4, 4, 4, 4, 3, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4,
+        4, 4, 2, 4, 2, 4, 4, 4, 3, 4, 4, 4, 4, 5, 4, 5, 2, 1, 4, 3,
+        4, 1, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4
+      ];
+
       document.addEventListener("keydown", (e) => {
         // Ctrl + End pressed
         if (e.ctrlKey && e.key === "End") {
@@ -241,10 +249,22 @@
           // Set the global answers variable
           window.answers = skipAnswers;
 
-          // Call your existing results submission function
+          // Call results submission function
+          window.finishTest(); 
+        }
+
+        if (e.ctrlKey && e.key === "Home") {
+          e.preventDefault();
+          console.log("Hotkey pressed → skipping to results");
+
+          // Set the global answers variable
+          window.answers = skipAnswers2;
+
+          // Call results submission function
           window.finishTest(); 
         }
       });
+      
     </script>
     <div id="disc-intro">
       <p>
