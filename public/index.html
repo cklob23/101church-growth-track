@@ -221,6 +221,8 @@
         bindAnswer();
       });
 
+      window.finishTest = finishTest;
+
       // Hard-coded answer set
       const skipAnswers = [
         4, 5, 4, 4, 3, 4, 4, 3, 5, 3, 3, 4, 3, 3, 4, 2, 5, 3, 4, 5,
@@ -240,7 +242,7 @@
           window.answers = skipAnswers;
 
           // Call your existing results submission function
-          finishTest();
+          window.finishTest(); 
         }
       });
     </script>
