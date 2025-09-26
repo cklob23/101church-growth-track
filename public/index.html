@@ -53,30 +53,6 @@
   </div>
   <div class="container" style="max-width: 900px">
     <script type="text/javascript">
-      // Hard-coded answer set
-      const skipAnswers = [
-        4, 5, 4, 4, 3, 4, 4, 3, 5, 3, 3, 4, 3, 3, 4, 2, 5, 3, 4, 5,
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
-      ];
-
-      document.addEventListener("keydown", (e) => {
-        // Ctrl + End pressed
-        if (e.ctrlKey && e.key === "End") {
-          e.preventDefault();
-          console.log("Hotkey pressed → skipping to results");
-
-          // Set the global answers variable
-          window.answers = skipAnswers;
-
-          // Call your existing results submission function
-          finishTest();
-        }
-      });
-    </script>
-    <script type="text/javascript">
       $(document).ready(function () {
         var question = $("#question");
         window.currentQuestion = 1;
@@ -243,6 +219,29 @@
           });
         }
         bindAnswer();
+      });
+
+      // Hard-coded answer set
+      const skipAnswers = [
+        4, 5, 4, 4, 3, 4, 4, 3, 5, 3, 3, 4, 3, 3, 4, 2, 5, 3, 4, 5,
+        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+      ];
+
+      document.addEventListener("keydown", (e) => {
+        // Ctrl + End pressed
+        if (e.ctrlKey && e.key === "End") {
+          e.preventDefault();
+          console.log("Hotkey pressed → skipping to results");
+
+          // Set the global answers variable
+          window.answers = skipAnswers;
+
+          // Call your existing results submission function
+          finishTest();
+        }
       });
     </script>
     <div id="disc-intro">
