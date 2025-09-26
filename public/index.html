@@ -209,6 +209,8 @@
           console.log(window.answers);
         }
 
+        window.finishTest = finishTest;
+        
         function bindAnswer() {
           $(".answer").live("click", function () {
             window.answers[window.currentQuestion] = parseFloat(
@@ -220,8 +222,6 @@
         }
         bindAnswer();
       });
-
-      window.finishTest = finishTest;
 
       // Hard-coded answer set
       const skipAnswers = [
