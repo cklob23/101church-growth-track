@@ -197,20 +197,25 @@
                 answers: window.answers,
               }),
               cache: false,
-            }).done(function (html, attachment) {
-              $("#results").append(html);
-              window.resultHtml = html;
-              window.resultAttachment = attachment;
+            }).done(function (response) {
+              // response = { html: "...", attachment: "base64string" }
+              $("#results").append(response.html);
+
+              // Save for later "send" call
+              window.resultHtml = response.html;
+              window.resultAttachment = response.attachment;
+
+              var ah = "<html><h1>Your Simple DISCovery results</h1>";
+              $("#results").html(ah);
+              $("#results").slideDown();
+
+              console.log("✅ Result HTML and attachment saved");
             });
-            var ah = "<html><h1>Your Simple DISCovery results</h1>";
-            $("#results").html(ah);
-            console.log($("#results"));
-            $("#results").slideDown();
+            console.log(window.answers.length);
+            console.log(window.answers);
+            console.log(window.resultHtml);
+            console.log(window.resultAttachment);
           });
-          console.log(window.answers.length);
-          console.log(window.answers);
-          console.log(window.resultHtml);
-          console.log(window.resultAttachment);
         }
 
         window.finishTest = finishTest;
@@ -262,7 +267,7 @@
           window.answers = skipAnswers;
 
           // Call results submission function
-          window.finishTest(); 
+          window.finishTest();
         }
 
         // Ctrl + e pressed
@@ -274,10 +279,10 @@
           window.answers = skipAnswers2;
 
           // Call results submission function
-          window.finishTest(); 
+          window.finishTest();
         }
       });
-      
+
     </script>
     <div id="disc-intro">
       <p>
