@@ -197,8 +197,10 @@
                 answers: window.answers,
               }),
               cache: false,
-            }).done(function (html) {
+            }).done(function (html, attachment) {
               $("#results").append(html);
+              window.resultHtml = html;
+              window.resultAttachment = attachment;
             });
             var ah = "<html><h1>Your Simple DISCovery results</h1>";
             $("#results").html(ah);
